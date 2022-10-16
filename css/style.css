@@ -562,10 +562,33 @@ i.fa {
   cursor: pointer;
   user-select: none;
   padding-top: 20px;
-   padding-left: 8px;
+  padding-left: 12px;
+  color: #000;
 }
 
-.fa:hover {
-  color: darkblue;
+
+i.fa-brands{
+    font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  padding-top: 20px;
+  padding-left: 12px;
+  color: #000;
 }
 
+.fa-brands:hover {
+  color: red;
+}
+
+i.fa-regular{
+    font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  padding-top: 20px;
+  padding-left: 12px;
+  color: #000;
+}
+
+.fa-regular:hover {
+  color: #2980b9;
+}
