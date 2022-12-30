@@ -1911,20 +1911,14 @@
 
       <script>
         var snd = new Audio("sound/khaching.mp3"); 
-        var hexcode = "#DD5353";
                 function myFunction(hexcode) 
                 {
-              // Get the text field
- 
 
-             // Copy the text inside the text field
                  navigator.clipboard.writeText(hexcode);
 
-             
-      
-            snd.play();
-            // Alert the copied text
-            document.getElementById("snackbar").innerHTML = '#'+ hexcode + ' copied 🧑‍💻';
+                 snd.play();
+                 // Alert the copied text
+                 document.getElementById("snackbar").innerHTML = '#'+ hexcode + ' copied 🧑‍💻';
                  var x = document.getElementById("snackbar");
                  
                  x.className = "show";
@@ -1936,6 +1930,24 @@
              snd.muted ? snd.muted = false : snd.muted = true ;
         
              }
+
+       function longbanner(bannertext) 
+                {
+
+                 navigator.clipboard.writeText(bannertext);
+
+                 // Alert the copied text
+                 document.getElementById("snackbar").innerHTML = bannertext;
+                 var x = document.getElementById("snackbar");
+                 
+                 x.className = "show";
+                 setTimeout(function(){ x.className = x.className.replace("show", ""); }, 8000);
+                }
+
+
+       window.onload = (event) => {
+       longbanner('<a href="https://shoutoutcolorado.com/meet-nishank-sharma-product-designer/" target="_blank" style="color:#fff">RAINBOWS was featured in the Shoutout Colorado magazine! 🥳🎉🙌  Check it out! 🔗</a>');
+}      
     </script>
 
 
